@@ -6,7 +6,8 @@
 --text: #20263a;
 --muted: #737b90;
 --primary: #f49cbb;
---primary-light: #cbeef3;
+--primary-light: #fde8ef;
+--primary-dark: #b83d66;
 --border: #e9eaf1;
 --shadow: 0 15px 45px rgba(35, 40, 75, 0.06);
 }
@@ -87,7 +88,7 @@ transition: color 0.3s;
 
 .nav-links a:hover,
 .nav-links a.active {
-color: var(--primary);
+color: var(--primary-dark);
 }
 
 /* Hero */
@@ -112,7 +113,7 @@ align-items: center;
 gap: 9px;
 padding: 8px 15px;
 background: var(--primary-light);
-color: var(--primary);
+color: var(--primary-dark);
 border-radius: 30px;
 font-size: 12px;
 font-weight: 700;
@@ -173,12 +174,13 @@ transition: all 0.3s ease;
 
 .button-primary {
 background: var(--primary);
-color: white;
-box-shadow: 0 7px 20px rgba(99, 91, 219, 0.2);
+color: var(--text);
+box-shadow: 0 7px 20px rgba(244, 156, 187, 0.35);
 }
 
 .button-primary:hover {
-background: #5149c6;
+background: var(--primary-dark);
+color: white;
 transform: translateY(-3px);
 }
 
@@ -189,7 +191,7 @@ background: white;
 
 .button-secondary:hover {
 border-color: var(--primary);
-color: var(--primary);
+color: var(--primary-dark);
 transform: translateY(-3px);
 }
 
@@ -200,7 +202,7 @@ height: 310px;
 border-radius: 50%;
 right: 0;
 top: 150px;
-background: linear-gradient(135deg, #eceaff, #f5efff);
+background: linear-gradient(135deg, #fde8ef, #fff3f7);
 opacity: 0.8;
 z-index: 0;
 }
@@ -209,7 +211,7 @@ z-index: 0;
 .hero-decoration::after {
 content: "";
 position: absolute;
-border: 1px solid rgba(99, 91, 219, 0.15);
+border: 1px solid rgba(217, 88, 127, 0.15);
 border-radius: 50%;
 }
 
@@ -242,7 +244,7 @@ margin-bottom: 45px;
 }
 
 .section-label {
-color: var(--primary);
+color: var(--primary-dark);
 text-transform: uppercase;
 font-size: 12px;
 font-weight: 800;
@@ -287,8 +289,8 @@ color: var(--text);
 }
 
 .about-card {
-background: #f8f7ff;
-border: 1px solid #eeecff;
+background: #fff7fa;
+border: 1px solid #fbe1ea;
 padding: 38px;
 border-radius: 18px;
 position: relative;
@@ -302,7 +304,7 @@ right: 15px;
 bottom: -50px;
 font-size: 180px;
 font-family: serif;
-color: rgba(99, 91, 219, 0.07);
+color: rgba(217, 88, 127, 0.07);
 }
 
 .about-card-icon {
@@ -375,8 +377,8 @@ font-size: 14px;
 display: inline-block;
 margin-top: 12px;
 padding: 5px 12px;
-background: #f1f0ff;
-color: var(--primary);
+background: #fde8ef;
+color: var(--primary-dark);
 border-radius: 30px;
 font-size: 11px;
 font-weight: 700;
@@ -403,7 +405,7 @@ transition: all 0.3s;
 }
 
 .interest-card:hover {
-border-color: #c9c5ff;
+border-color: var(--primary);
 box-shadow: var(--shadow);
 transform: translateY(-5px);
 }
@@ -475,7 +477,7 @@ font-size: 12px;
 }
 
 .back-to-top {
-color: var(--primary);
+color: var(--primary-dark);
 font-size: 13px;
 font-weight: 700;
 }
