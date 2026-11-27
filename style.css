@@ -426,6 +426,44 @@ font-size: 13px;
 line-height: 1.8;
 }
 
+/* My work */
+
+.work {
+background: var(--background);
+}
+
+.work-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
+
+.work-card {
+padding: 25px;
+border: 1px solid var(--border);
+border-radius: 15px;
+background: white;
+}
+
+.work-card img {
+display: block;
+width: 100%;
+border: 1px solid var(--border);
+border-radius: 8px;
+margin-bottom: 18px;
+}
+
+.work-card h3 {
+font-size: 17px;
+margin-bottom: 9px;
+}
+
+.work-card p {
+color: var(--muted);
+font-size: 14px;
+line-height: 1.8;
+}
+
 /* Contact */
 
 .contact {
@@ -497,6 +535,10 @@ gap: 30px;
 
 .interest-grid {
 grid-template-columns: repeat(2, 1fr);
+}
+
+.work-grid {
+grid-template-columns: 1fr;
 }
 }
 
@@ -575,4 +617,8 @@ text-align: center;
 scroll-behavior: auto !important;
 transition: none !important;
 }
+}
+
+img {
+max-width: 100%;
 }
